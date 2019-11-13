@@ -1,0 +1,15 @@
+
+
+.navBar{
+    display:flex;
+    justify-content: space-evenly;
+    z-index: 99;
+    position: fixed;
+    top:0px;
+    width: 100%
+}
+.navBar div{
+    border: solid green;
+    width: auto;
+    flex-grow: 1
+}
