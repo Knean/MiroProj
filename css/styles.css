@@ -120,7 +120,7 @@ body{
      scroll-behavior: smooth;
      height: 500px;
      width: 100%;
-     overflow: hidden;
+     overflow: scroll;
      float:left;
  }
  .attractionDescription{
@@ -139,3 +139,67 @@ body{
  .images{
      display:flex; flex-direction: column; width: 40%; float:left
  }
+#logo{
+    animation: slideIn 1s 
+}
+ @keyframes slideIn {
+     from {right: 100%;}
+     to {right:10%;}
+ }
+ input{
+    width: 100%;
+    margin-bottom: 2px;
+}
+.navBar{
+    display:flex;
+    justify-content: space-evenly;
+    z-index: 99;
+    position: fixed;
+    top:0px;
+    width: 100%;
+    background-color: rgba(177, 177, 230, 0.911);
+}
+.navBar div{
+    border: solid green;
+    width: auto;
+    flex-grow: 1;
+    text-align: center;
+
+    
+}
+.navBar div a{
+display:inline-block;
+height:100%;
+width: 100%;
+
+}
+.navBar div a p{
+    line-height: 0;
+}
+.navBar div:hover{
+    background-color: yellow;    
+}
+
+#fullscreen{
+    display:none;
+    position:fixed;
+    height: 200px;
+    z-index: 2;
+    width: 100vw;
+    height:100vh;
+}
+#hide{
+    position: relative;
+    bottom: 50%;
+   
+    
+  
+}
+#fullscreenimage{
+    
+    
+   
+    position: relative;
+    width: 100%;
+   
+}

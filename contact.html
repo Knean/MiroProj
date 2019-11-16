@@ -14,7 +14,7 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="js/contact.js" async defer></script>
 </head>
 
@@ -22,7 +22,13 @@
 
 
 <body>
-    <div id="navBar"></div>
+        <div class = "border navBar">
+                <div style="flex-grow: 2;"><a href ="index.html"><p>Home</p></a></div>    
+               <div><a href="contact.html"><p>Contact</p></a></div> 
+                <div><a href = "about.html"><p>About</p></a></div>
+                <div> <a href = "gallery.html"><p>Gallery</p></a></div>
+                <div> <a href = "products.html"><p>Products</p></a> </div>
+            </div>
     <div class="border content">
         <h1>History</h1>
         <button id="findOutMore">Find out more</button>
@@ -36,20 +42,38 @@
             phone:088 855 8886
 
         </p>
+<div id ="errorField" style="border: solid red; color:red; display: none">
+    <p> please enter your real email</p>
+</div>
+
+</div>
 
         <form>
-            <label for="email">Email</label>
-            <input style="margin-left: 0px" required id="#email" type="email">
-            <br>
-            <label for="firstName">First name</label>
-            <input id="firstName " required type="text">
-            <br />
-            <textarea rows=10>
-                your query here...
-            </textarea>
-            <br />
-            <input type="submit" value="submit">
-        </form>
+                <label  for="email">Email</label>
+                <input placeholder="you@somewhere.com" style="margin-left: 0px" required id="email" type="email">
+              
+                <label  for="firstName">First name</label>
+                <input placeholder = "your name" id="firstName " required type="text">
+                
+                <label  for="surname">Surname</label>
+                <input placeholder = "your Surname" id="surname " required type="text">
+
+                <textarea rows=10>
+                    your query here...
+                </textarea>
+              
+                <input placeholder = "The occasion" id="occasion " required type="text">
+                <label  for="occasion">The occasion</label>
+
+               
+                <label  for="date">date</label>
+                <input placeholder = "your name" id="date " required type="date">
+
+                <label  for="phone">phone</label>
+                <input placeholder = "phone" id="phone" required type="number">
+
+                <input type="submit" value="submit">
+            </form>
     </div>
     <div class="footer border">
         <p style="font-size: 40px; font-family: Segoe UI; font-weight: 1000" align="center">News letter </p>

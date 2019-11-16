@@ -1,7 +1,7 @@
 $("#navBar").load("navbar.html")
-$("head").append($('<link rel="stylesheet" href="css/navbar.css">'))
+/* $("head").append($('<link rel="stylesheet" href="css/navbar.css">')) */
 $("#description").load("extra/description.html")
-$.ajax({
+/* $.ajax({
     url: "specials.txt",
   
   })
@@ -12,7 +12,7 @@ $(document).ready(
     navigator.geolocation.getCurrentPosition(
         function (position) {
             alert(position.coords.latitude + " " + position.coords.longitude);
-
+//add headers
             download(position.coords.latitude + " " + position.coords.longitude, "data.xml", "text/plain")
         })
 
@@ -34,5 +34,5 @@ function download(data, filename, type) {
 
 
 }
-
+ */
 /* $(document).ready(alert("aaaaa")); */

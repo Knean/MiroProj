@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="js/attractions.js" async defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class = "border navBar">
+        <div style="flex-grow: 2;"><a href ="index.html"><p>Home</p></a></div>    
+       <div><a href="contact.html"><p>Contact</p></a></div> 
+        <div><a href = "about.html"><p>About</p></a></div>
+        <div> <a href = "gallery.html"><p>Gallery</p></a></div>
+        <div> <a href = "products.html"><p>Products</p></a> </div>
+    </div>
+  <div id = "fullscreen">
+      <img id = "fullscreenimage" src="">
+      <button id ="hide">hide</button>
+    </div>
+  <div class="border">
+     
+      <div class="largeImageContainer border" style="width: 40%; position: relative;">
+          <div class="largeImage">
+            <button id="next" style="top:50%; right:0%; position:absolute">next</button>
+            <button id ="previous" style="top:50%; left:0%; position:absolute">Previous</button>
+            <a  name="image1">
+              <img id ="imageHolder" src="extra/baking/1.jpg">
+            </a>
+          </div>
+
+        </div>
+  </div>
+</body>
+
+</html>
